@@ -1,0 +1,28 @@
+.quote {
+    width: 50%;
+}
+
+main {
+    min-height: 80vh;
+}
+
+blockquote  p {
+    background-color: #1f1e1e;
+    border: 2px solid #313131; 
+    border-radius: 8px;
+    font-size:medium;
+    padding: 1% 4% 2% 0;
+    text-align: right;
+    /* margin: 1% 1% 0 0; */
+}
+
+cite {
+    font-size:small;
+    float: right;
+    margin: 0 2% 0 0;
+} 
+
+footer {
+    text-align: center;
+    font-size:small;
+}
