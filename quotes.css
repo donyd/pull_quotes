@@ -17,12 +17,21 @@ blockquote  p {
 }
 
 cite {
-    font-size:small;
     float: right;
-    margin: 0 2% 0 0;
+    font-size:smaller;
 } 
 
 footer {
     text-align: center;
     font-size:small;
+}
+
+#content-data {
+    text-align: right;
+    clear: right;
+    font-size:small;
+}
+
+cite, #content-data {
+        margin: 0 2% 0 0;
 }
