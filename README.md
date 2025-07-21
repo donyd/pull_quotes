@@ -2,9 +2,9 @@
 
 This starter project will guide you through making your very first pull request while adding an update, in the form of a quote of your choice, possibly from someone famous, or your own perhaps. 
 
-This can be followed through steps outline in this documuent or through the video tutorial:
+This can be followed through steps outline in this document or through the video tutorial:
 
-- [update with video link when available]
+[![github pull request](https://img.youtube.com/vi/m9RSHqNKkao/0.jpg)](https://www.youtube.com/watch?v=m9RSHqNKkao)
 
 *At the onset this will be just a simple html page with text that showcases some famous quotes. This may, or may not, be spruced up later.*
 
@@ -30,8 +30,8 @@ Made with and in:
 ### From Github with love 
 
 1. Fork this repo, which will create a copy of the project to your own github account.
-2. From the newly copied repo on your own github account, click on the code button then copy either the HTTPS or SSH string.
-3. Open a terminal window on your local machine and run this command + the string you copied in step 2.
+2. From the newly copied repo on your own github account, click on the code button then copy the HTTPS string.
+3. Open a terminal window on your local machine and run this command + the string you copied in step 2 in a folder of your choice.
 ```
 git clone https://github.com/[username]/[repo_name].git
 ```
@@ -46,7 +46,7 @@ cd make-quotes-not-war
 ```
 2. Create and switch to new branch to make the update on:
 ```
-git checkout -b <some name>
+git checkout -b <some-name>
 ```
 *Give a name like dev, or something more specific like add-quote, without the angled brackets <>.*
 
@@ -56,37 +56,54 @@ git checkout -b <some name>
 1. Open the index.html file in an editor of your choice.
 2. Add in the following chunk of code right above the top most quote in the div with class "quote":
 ```
- <blockquote>
-    <p>Your quote goes here</p>
-    <cite>add the author or source</cite>
+<blockquote>
+    <p>Your quote here</p>
+    <cite>Quote Author</cite>
+        <div id="content-data">
+            Github: <a href="https://github.com/yourgithubusername" target="_blank">Your username</a>&nbsp; |
+            <time datetime="202#-##-##">&nbsp; Added on ##<sup>th</sup> Month '##</time>
+        </div>
 </blockquote>
 ```
-3. Commit the changes made:
+*You can open up the file locally to verify the changes made.*
+
+3. Add the changes made to be staged:
+```
+ git add .
+``` 
+4. Commit the changes made:
 ```
  git commit -m "your message here"
 ```
-*Message can be something simple like "<your name> add quote*
+*Message can be something simple like "add quote: username"*
 
-4. Push your changes to the forked Github repo you made:
+5. Push your changes to the forked Github repo you made: [Note: ensure that you are on the same branch that was created earlier before.]
 ```
-git push origin <branch name>
+git push --set-upstream origin <branch name>
 ```
 *Branch name will be the same that you created right after cloning, for e.g. add-quote if that's the one you used.*
 
 ### Pull 
-*On your repo, you will see that a notification has appeared called "Compare & pull request."*
+*Back on your forked repo, you will see that a notification has appeared called "Compare & pull request."*
 
-1. Click on the *Compare & pull request*.
-2. You can update the title of this request as well as leave a comment if you wish.
+1. Click on the *Pull requests* tab at the top.
+2. Click on the *New pull request* button that appears on this page.
+3. This will open up a new page titled "Comparing changes."
+4. On the dropdown lists, the right hand side represents the repo/branch you want to push from. Select the forked repo/branch you push up from the last section. [Selecting this should show the notification with the button "Create pull request"]
+5. The left hand side would be the repo/branch you want to push the changes to
+6. Click on the "Create pull request" button once ready.
+7. Here you can update the title of this request as well as add a description if you wish.
 3. Once you are satisfied, click on *Create pull request*.
 
 ---
-And there you have it! You have successfully submitted your very first pull request!
+Some checks will run to ensure there aren't any merge conflicts. If all goes well, You have successfully submitted your very first pull request!
 
-What happens next, would be the owner of the original repo you forked from, will receive a pull request, which can be reviewed and merged or can be requested to make updates before being accepted.
+What happens next, would be the owner of the original repo you forked from, will receive a pull request, which can be reviewed and merged or changes can be requested to make updates before being accepted.
 
-Once the Pull Request has been accepted and merged on my side, you will be able to see the github hosted page of the site with your qoute:
+Once the Pull Request has been accepted, this will be displayed on your side with the message "Pull request successfully merged and closed."
+
+You can now delete the branch you created or the entire fork and see your work added to the main project repo. This can be viewed here:
 
 * [Pull me some quotes](https://donyd.github.io/pull_quotes/)
 
-The accompanying video shows this and all the steps we've gone through.
+The accompanying video shows this and all the steps we've gone through with additional details, including what happens after a pull request is received.
