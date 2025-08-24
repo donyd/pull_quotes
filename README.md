@@ -4,7 +4,7 @@ This starter project will guide you through making your very first pull request 
 
 This can be followed through steps outline in this document or through the video tutorial:
 
-[![github pull request](https://img.youtube.com/vi/m9RSHqNKkao/0.jpg)](https://youtu.be/mW58ovL8MDI?si=E2WrOcRwTH88ma01)
+[![github pull request](https://img.youtube.com/vi/mW58ovL8MDI/0.jpg)](https://youtu.be/mW58ovL8MDI?si=E2WrOcRwTH88ma01)
 
 *At the onset this will be just a simple html page with text that showcases some famous quotes. This may, or may not, be spruced up later.*
 
